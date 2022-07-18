@@ -21,7 +21,7 @@ public class City {
     private List<Person> people;
 
     @Temporal(TemporalType.DATE)
-    @DateTimeFormat(pattern = "yyyy-MM")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date foundationDate;
 
     public City() {
