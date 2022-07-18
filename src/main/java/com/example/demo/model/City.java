@@ -16,11 +16,12 @@ public class City {
     private int population;
 
     private boolean isTouristic;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "city")
     private List<Person> people;
 
     @Temporal(TemporalType.DATE)
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM")
     private Date foundationDate;
 
     public City() {
